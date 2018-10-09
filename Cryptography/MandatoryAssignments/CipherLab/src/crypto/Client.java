@@ -3,20 +3,32 @@
  */
 package crypto;
 
+import javax.crypto.*;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * @author tosindo
  *
  */
 public class Client implements IParent {
-	
-	public static void main(String[] args) throws InterruptedException {
+	SecretKey secretKey;
+	DES des;
+
+	public Client() throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException {
+		secretKey = KeyGenerator.getInstance("DES").generateKey();
+		des = new DES(secretKey);
+	}
+
+
+	public static void main(String[] args) throws InterruptedException, NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException {
 		Client client = new Client();
+
 
 		while (true) {
 			client.sendAndReceice();
@@ -40,9 +52,9 @@ public class Client implements IParent {
 	    	
 	    	// send a plaintext message to server
 	    	String plaintxt = "Hello from client";
-	    	
+	    	String encryptedText = des.encrypt(plaintxt);
 	    	// send message to server
-	    	oos.writeObject(plaintxt.getBytes());
+	    	oos.writeObject(encryptedText.getBytes());
 	    	oos.flush();
 	    	
 	    	// receive response from server
@@ -63,8 +75,12 @@ public class Client implements IParent {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
+		} catch (BadPaddingException e) {
+			e.printStackTrace();
+		} catch (IllegalBlockSizeException e) {
+			e.printStackTrace();
 		}
-		
+
 	}
 
 	@Override

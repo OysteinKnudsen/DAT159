@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d700656-cc06-45a5-8630-c523a2d31a1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CipherLab/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/CipherLab.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/bin/crypto/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/bin/crypto/DES.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/bin/crypto/IParent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/bin/crypto/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/bin/crypto/Utility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/bin/crypto/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/src/crypto/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/src/crypto/DES.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/src/crypto/IParent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/src/crypto/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/src/crypto/Utility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CipherLab/src/crypto/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesCryptography_Mandatory1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesCryptography_Mandatory1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +15,7 @@
     <session id="610705546">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -152,7 +132,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539353336593" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539354072129" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -207,16 +187,15 @@
       <option name="presentableId" value="Default" />
       <updated>1539345434114</updated>
       <workItem from="1539345437084" duration="4095000" />
-      <workItem from="1539349593365" duration="3490000" />
+      <workItem from="1539349593365" duration="4034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7585000" />
+    <option name="totallyTimeSpent" value="8129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

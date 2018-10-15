@@ -7,14 +7,20 @@ public class Output {
 	private String address;
 	
 	public Output(long value, String address) {
-	    //TODO
+		this.value = value;
+		this.address = address;
 	}
 
 	@Override
 	public String toString() {
-        //TODO For screen output
-        return "";
+		return "Output [value = " + value+ ", address = " + address+ "]";
 	}
 	
-    //TODO Getters?
+    public long getValue(){
+		return value;
+	}
+
+	public String getAddress(){
+		return address;
+	}
 }

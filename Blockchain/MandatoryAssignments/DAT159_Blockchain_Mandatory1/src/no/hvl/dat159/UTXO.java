@@ -1,6 +1,8 @@
 package no.hvl.dat159;
 
+import javax.swing.text.html.HTMLDocument;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class UTXO {
@@ -10,10 +12,19 @@ public class UTXO {
     //  When removing UTXOs, we need to identify which to remove.
     //  Since the Inputs are references to UTXOs, we can use those
     //  as keys.
+
+
 	private Map<Input, Output> map = new HashMap<>();
 	
 	public void printUTXO() {
-	    //TODO
+		System.out.println("UTXO");
+
+		Iterator iterator = map.entrySet().iterator();
+		while (iterator.hasNext()){
+			Map.Entry pair = (Map.Entry)iterator.next();
+			System.out.println(pair.getKey().toString() + "\n -->" + pair.getValue().toString());
+		}
+
 	}
 	
 	public void addOutputFrom(CoinbaseTx ctx) {
@@ -24,5 +35,7 @@ public class UTXO {
         //TODO
     }
 
-    //TODO Getters?
+    public Map getUTXOMap(){
+		return map;
+	}
 }

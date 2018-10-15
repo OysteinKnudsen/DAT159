@@ -22,10 +22,15 @@ public class Application {
 
         // 0. To get started, we need a few (single address) Wallets. Create 2 wallets.
         //    Think of one of them as the "miner" (the one collecting "block rewards").
- 
+
+        Wallet minerWallet = new Wallet("SomeAddress", new UTXO());
+        Wallet myWallet = new Wallet("someAdress2", new UTXO());
+
         // 1. The first "block" (= round of transactions) contains only a coinbase
         //    transaction. Create a coinbase transaction that adds a certain
         //    amount to the "miner"'s address. Update the UTXO-set (add only).
+
+
         
         // 2. The second "block" contains two transactions, the mandatory coinbase
         //    transaction and a regular transaction. The regular transaction shall

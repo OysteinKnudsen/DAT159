@@ -8,14 +8,20 @@ public class Input {
 	private int prevOutputIndex;
 	
 	public Input(String prevTxHash, int prevOutputIndex) {
-	    //TODO
+	    this.prevTxHash = prevTxHash;
+	    this.prevOutputIndex = prevOutputIndex;
 	}
 
 	@Override
 	public String toString() {
-        //TODO For screen output
-	    return "";
+		return "Input [prevTxHash = " + prevTxHash + ", previous output index = " + prevOutputIndex + "]";
 	}
 
-    //TODO Getters?
+    public String getPrevTxHash() {
+		return prevTxHash;
+	}
+
+	public int getPrevOutputIndex() {
+		return prevOutputIndex;
+	}
 }

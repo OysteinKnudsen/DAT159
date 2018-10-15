@@ -14,7 +14,8 @@ public class Wallet {
     private Map<Input, Output> utxoMap;
 
     public Wallet(String id, UTXO utxo) {
-        //TODO
+        this.id = id;
+
     }
 
     public String getAddress() {
@@ -23,8 +24,7 @@ public class Wallet {
     }
 
     public PublicKey getPublicKey() {
-        //TODO
-        return null;
+        return keyPair.getPublic();
     }
 
     public Transaction createTransaction(long value, String address) throws Exception {
@@ -50,8 +50,7 @@ public class Wallet {
 
     @Override
     public String toString() {
-        //TODO
-        return null;
+        return "Wallet [id = " + id + ", address = " + getAddress() + ", balance = " + getBalance() + "]";
     }
 
     public long getBalance() {

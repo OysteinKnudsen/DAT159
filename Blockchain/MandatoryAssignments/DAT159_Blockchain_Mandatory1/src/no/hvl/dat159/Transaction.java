@@ -15,21 +15,23 @@ public class Transaction {
 	//same key, we can have one signature for the entire transaction, 
 	//and not one for each input. This simplifies things a lot 
 	//(more than you think)!
+
 	private PublicKey senderPublicKey;
 	private byte[] signature;
 	
-	private String txHash;
+	private String txHash; //Unique ID
 	
 	public Transaction(PublicKey senderPublicKey) {
-		//TODO
+		this.senderPublicKey = senderPublicKey;
+
 	}
 	
 	public void addInput(Input input) {
-		//TODO
+		inputs.add(input);
 	}
 	
 	public void addOutput(Output output) {
-		//TODO
+		outputs.add(output);
 	}
 	
 	@Override
@@ -43,7 +45,7 @@ public class Transaction {
 	}
 
 	public void calculateTxHash() {
-	    //TODO
+
 	}
 	
 	public boolean isValid() {

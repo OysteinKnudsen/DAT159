@@ -1,10 +1,10 @@
-package no.hvl.dat159;
+package no.hvl.dat159.Sensors;
 
-public class Temperature {
+public class TemperatureSensor {
 
 	double temperature;
 
-	public Temperature () {
+	public TemperatureSensor() {
 		this.temperature = 0.0;
 	}
 	

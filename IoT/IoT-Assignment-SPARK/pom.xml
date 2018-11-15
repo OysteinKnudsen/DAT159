@@ -69,7 +69,7 @@
                 </descriptorRefs>
                 <archive>
                     <manifest>
-			<!-- This must be a fully qualified name. e.g. no.hvl.dat159.Main -->
+			<!-- This must be a fully qualified name. e.g. no.hvl.dat159.SparkAPI.SparkServerkServer -->
                         <mainClass>Main</mainClass>
                     </manifest>
                 </archive>

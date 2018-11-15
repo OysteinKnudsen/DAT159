@@ -4,6 +4,7 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.List;
+import no.hvl.dat159.DSAUtil;
 
 public class Transaction {
 
@@ -18,11 +19,11 @@ public class Transaction {
 
 	private PublicKey senderPublicKey;
 	private byte[] signature;
-	
 	private String txHash; //Unique ID
 	
 	public Transaction(PublicKey senderPublicKey) {
 		this.senderPublicKey = senderPublicKey;
+
 
 	}
 	
@@ -36,12 +37,11 @@ public class Transaction {
 	
 	@Override
 	public String toString() {
-	    //TODO
-		return null;
+		return "Transaction( " + txHash + " ) \n Inputs = " + getInputs() + " Outputs = " + getOutputs();
 	}
 
 	public void signTxUsing(PrivateKey privateKey) {
-	    //TODO
+	    // TODO
 	}
 
 	public void calculateTxHash() {
@@ -51,6 +51,22 @@ public class Transaction {
 	public boolean isValid() {
 	    //TODO Complete validation of the transaction. Called by the Application.
 	    return true;
+	}
+
+	private String getInputs () {
+		String inputString = "";
+		for (Input input : inputs){
+			inputString += input.toString() + "\n";
+		}
+		return inputString;
+	}
+
+	private String getOutputs() {
+		String outputString = "";
+		for (Output output : outputs){
+			outputString += output.toString() + "\n";
+		}
+		return outputString;
 	}
 	
    //TODO Getters?
